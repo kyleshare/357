@@ -1,0 +1,22 @@
+Track how many times a user has been greeted, print an initial greeting the first time the user is greeted,
+and a different greeting the following times
+Also... Only print a greeting the first 3 times.
+
+first_greeting="Nice to meet you!"
+later_greeting="How are you?"
+times_greeted=0
+
+while [ times_greeted -lt 3 ]
+do
+  if [ times_greeted -lt 1 ]
+  then
+    echo $first_greeting
+  
+  else
+    echo $later_greeting
+  fi
+  
+  times_greeted=$((times_greeted + 1))
+done
+   
+   
