@@ -1,0 +1,15 @@
+Track how many times a user has been greeted, print an initial greeting the first time the user is greeted,
+and a different greeting the following times
+
+#!/bin/bash
+first_greeting="Nice to meet you!"
+second_greeting="How are you?"
+times_greeted=0
+
+if [ $times_greeted -eq 0 ]
+then
+  echo $first_greeting
+else
+  echo $second_greeting
+fi
+
