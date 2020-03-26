@@ -1,0 +1,22 @@
+Print the var index as long as it is less than 5, incrementing it each time
+
+#Using while
+while [ $index -lt 5 ]
+do
+  echo $index
+  index = $((index + 1))
+done
+
+#Using until
+until [ $index -ge 5 ]
+do
+  echo $index
+  index = $((index + 1))
+done
+
+
+
+Notes: 
+Loops use "do" and "done"
+Arithmetic in bash scripting uses $((...)) syntax. 
+  
