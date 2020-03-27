@@ -1,4 +1,7 @@
-Print the var index as long as it is less than 5, incrementing it each time
+Bash scripting uses 3 types of loops, for, while, & until.
+Until loops until a condition is true, whereas while loops while a condition is true.
+
+Ex: Print the var index as long as it is less than 5, incrementing it each time
 
 #Using while
 while [ $index -lt 5 ]
@@ -17,6 +20,5 @@ done
 
 
 Notes: 
-Loops use "do" and "done"
 Arithmetic in bash scripting uses $((...)) syntax. 
   
