@@ -1,0 +1,24 @@
+Note: Read the loops and conditionals examples before this.
+
+Ex: Track how many times a user has been greeted, print an initial greeting the first time the user is greeted,
+and a different greeting the following times. Ask the user how many times the program should greet them.
+
+first_greeting="Nice to meet you!"
+later_greeting="How are you?"
+times_greeted=0
+
+echo "How many times should I greet you?"
+read greeting_limit
+
+while [ $times_greeted -lt $greeting_limit ]
+do
+  if [ $times_greeted -lt 1 ]
+  then
+    echo $first_greeting
+  else
+    echo $later_greeting
+  fi
+  
+  times_greeted=$((times_greeted + 1))
+done
+  
