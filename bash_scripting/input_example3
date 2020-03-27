@@ -22,3 +22,16 @@ do
   times_greeted=$((times_greeted + 1))
 done
   
+  
+Ex: Redo the previous example, but have the user specify how many times the program should greet them as an input argument.
+
+first_greeting="Nice to meet you!"
+later_greeting="How are you?"
+times_greeted=0
+greeting_limit=$1
+
+while [ times_greeted -lt greeting_limit ]
+do
+  ...
+
+
