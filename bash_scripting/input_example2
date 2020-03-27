@@ -1,0 +1,11 @@
+Another eay to access external data is to have a user add input arguments when they run your script
+
+Within the script, they're accessed using $1, $2, etc.
+An indefinite number of input arguments can be accessed with $@
+
+Ex: Write a script to print all input arguments
+
+for arg in $@
+do
+  echo $arg
+done
