@@ -1,7 +1,7 @@
 One way to access external data it to prompt user for input.
 To do this, use the "read" syntax.
 
-Write a script to ask user for input and save it to a var
+Ex: Write a script to ask user for input and save it to a var
 
 echo "Guess a num"
 read number
