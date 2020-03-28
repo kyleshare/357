@@ -1,0 +1,31 @@
+Note: Review loops, conditionals, and input before aliases.
+
+We can call scripts without specifying the full name by using aliases.
+For OSX, aliases will be set in our .bash_profile
+Normally, a script name such as "script.sh" is called by typing ./script.sh
+
+Ex: Use an alias to make our script easier to call.
+
+greet="./script.sh"
+
+
+Now we just run greet to call our script.
+We can also add input arguments to our alias.
+
+Ex:  Create an alias called greet3 that will run our script "script.sh" and greet the user 3 times. 
+
+greet3="./script.sh 3" 
+
+first_greeting="Nice to meet you!"
+later_greeting="How are you?"
+times_greeted=0
+greeting_limit=$1
+
+while [ times_greeted -lt greeting_limit ]
+do
+  ...
+
+
+Note: 
+Remember that creating an alias happens in .bash_profile, while the script itself is in a .sh file.
+If the input argument is a string place it inside " " 
