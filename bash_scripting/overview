@@ -1,0 +1,29 @@
+-Any command run in terminal can run in a bash script.
+
+-Vars are assigned with an = sign and no spaces.
+  Ex: greeting="Hello"
+  
+-Vars are accessed using $
+  Ex: echo $greeting
+ 
+ -Conditionals use if, then, else, fi syntax.
+ 
+-Three types of loops are for, while, until. Loops use do, done syntax. 
+
+ 
+-Bash scripts have their own comparison operators
+  Equal: -eq
+  Not equal: -ne
+  Less than or equal: -le
+  Less than: -lt
+  Greater than or equal: -ge
+  Greater than: -gt
+  Is null: -z
+  
+-Input arguments can be passed to a bash script, by placing them after the script name when calling the script.
+  Ex: ./script.sh "Hello" 1
+  
+-Keyword read is used to gather input from user.
+  
+-Aliases can be created in the .bash_profile using the alias keyword
+  EX: alias greet="./script.sh"
